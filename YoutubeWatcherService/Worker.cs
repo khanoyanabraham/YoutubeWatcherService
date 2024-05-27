@@ -39,7 +39,7 @@ namespace YoutubeWatcherService
                     Task t = Task.Run(async () =>
                     {
                         Interlocked.Increment(ref indexer);
-                        using var watchUnit = new WatchUnit("https://www.youtube.com/watch?v=aoJLU_NVn_w", russia[indexer].ip, 120);
+                        using var watchUnit = new WatchUnit("https://www.youtube.com/watch?v=vfl-T_VYt7M", russia[indexer].ip, 120);
                         await watchUnit.WatchAsync(stoppingToken);
                     }, stoppingToken);
                     await Task.Delay(100);
