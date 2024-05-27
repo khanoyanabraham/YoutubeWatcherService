@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-YoutubeWatcherService-27968413-58e0-4d7e-b86a-4b8db33e67fc</UserSecretsId>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageReference Include="Selenium.Support" Version="4.21.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.21.0" />
+    <PackageReference Include="SeleniumProxyAuthentication.Chrome" Version="2.1.1" />
+  </ItemGroup>
+</Project>
