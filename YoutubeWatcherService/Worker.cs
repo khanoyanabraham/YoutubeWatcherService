@@ -34,7 +34,7 @@ namespace YoutubeWatcherService
                 var model = await client.GetFromJsonAsync<ProxyModel>("https://proxy-seller.com/personal/api/v1/c2e9f31d2c04f9a501dce0b6c971a907/proxy/list/ipv6");
                 var russia = model.data.items.Where(x => x.country == "Russia").ToList();
                 int indexer = 0;
-                for (int i = 0; i < 4; i++)
+                for (int i = 0; i < 20; i++)
                 {
                     Task t = Task.Run(async () =>
                     {
