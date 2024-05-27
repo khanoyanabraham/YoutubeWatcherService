@@ -85,8 +85,11 @@ namespace YoutubeWatcherService.Watcher
                 {
                     try
                     {
-                        Console.WriteLine($"Video Started {proxy}");
-                        await Task.Delay(TimeSpan.FromSeconds(watchTime), token);
+                        for (int i = 0; i < 10; i++)
+                        {
+                            driver.Navigate().Refresh();
+                            await Task.Delay(TimeSpan.FromSeconds(watchTime / 10), token);
+                        }
                     }
                     catch
                     {
